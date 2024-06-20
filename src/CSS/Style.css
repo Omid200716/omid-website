@@ -1,0 +1,282 @@
+/* HomePage.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  .homepage {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .navigation a:hover {
+    color: #007BFF;
+  }
+  
+  .section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+  
+  #about {
+    background: #f9f9f9;
+  }
+  
+  #knowledge {
+    background: #eef;
+  }
+  
+  #projects {
+    background: #efe;
+  }
+  
+  #contact {
+    background: #fee;
+  }
+  
+
+  .about-section {
+    display: flex;
+    align-items: center; /* Centrerar innehållet vertikalt */
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* En lätt bakgrundsfärg som i din bild */
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center; /* Ser till att bilden och texten är i mitten vertikalt */
+    gap: 30px; /* Lägger till mellanrum mellan bilden och texten */
+  }
+  
+  .about-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Gör bilden rund */
+  }
+  
+  .about-text h1 {
+    margin-top: 0;
+    color: #333; /* Mörk textfärg */
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    color: #666; /* Lättare textfärg för paragrafen */
+  }
+  
+  .resume-button, .contact-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .resume-button:hover, .contact-button:hover {
+    background-color: #444; /* Mörkare bakgrund vid hover */
+  }
+  
+
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Staplar bild och text vertikalt på mindre skärmar */
+      text-align: center; /* Centrerar texten */
+    }
+  }
+
+  .contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .contact-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+
+  .knowledge-section {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .knowledge-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .knowledge-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .skill-icon {
+    font-size: 20px; /* Justera ikonens storlek */
+    margin-right: 10px;
+  }
+  
+  .skill-name {
+    font-size: 16px;
+  }
+  
+  
+  .innovative-section {
+    background-color: #ADD8E6; /* Ljusblå bakgrundsfärg */
+    color: #000; /* Svart textfärg */
+    padding: 40px; /* Lämpligt utrymme runt texten */
+    text-align: left; /* Texten är vänsterjusterad */
+    max-width: 800px; /* Maximal bredd på textblocket för läsbarhet */
+    margin: 0 auto; /* Centrerar sektionen i containern */
+  }
+  
+  .innovative-section h2 {
+    font-size: 24px; /* Storleken på rubriken */
+    margin-bottom: 20px; /* Utrymme mellan rubriken och paragrafen */
+  }
+  
+  .innovative-section p {
+    font-size: 16px; /* Storleken på paragraftexten */
+    line-height: 1.6; /* Radavstånd för bättre läsbarhet */
+  }
+  
+  .main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f8ff; /* Ljusblå bakgrund */
+  }
+  
+  .content {
+    width: 60%;
+  }
+  
+  .profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Gör bilden cirkulär */
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #000;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-image {
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  }
+
+  
+  
